@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork2</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter a number" id="number1">
+    <input type="text" placeholder="Enter a number" id="number2">
+    <input type="text" placeholder="Total" id="total" >
+    <input type="button" value="+" id="plus" onclick="calculation1()">
+    <input type="button" value="-" id="minus" onclick="calculation2()">
+    <input type="button" value="*" id="multiply" onclick="calculation3()">
+    <input type="button" value="/" id="divide" onclick="calculation4()">
+</body>
+<script>
+    function calculation1(){
+        num1 = document.getElementById("number1").value;
+        num2 = document.getElementById("number2").value;
+        total = Number(num1) + Number(num2);
+        document.getElementById("total").value = total;
+    }
+    function calculation2(){
+        num1 = document.getElementById("number1").value;
+        num2 = document.getElementById("number2").value;
+        total = Number(num1) - Number(num2);
+        document.getElementById("total").value = total;
+    }
+    function calculation3(){
+        num1 = document.getElementById("number1").value;
+        num2 = document.getElementById("number2").value;
+        total = Number(num1) * Number(num2);
+        document.getElementById("total").value = total;
+    }
+    function calculation4(){
+        num1 = document.getElementById("number1").value;
+        num2 = document.getElementById("number2").value;
+        total = Number(num1) / Number(num2);
+        document.getElementById("total").value = total;
+    }
+</script>
+</html>
